@@ -100,26 +100,7 @@
           {
             "values": [
               {
-                "text": "$response.results"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_4_1596266825509",
-      "conditions": "$response",
-      "dialog_node": "response_3_1596266888335"
-    },
-    {
-      "type": "response_condition",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "$response.results"
+                "text": "$response.results.text"
               }
             ],
             "response_type": "text",
@@ -139,7 +120,7 @@
           "name": "main_webhook",
           "type": "webhook",
           "parameters": {
-            "search_query": "product featuers",
+            "search_query": "product features",
             "search_entity": "@product"
           },
           "result_variable": "response"
@@ -153,6 +134,25 @@
       "conditions": "#Product_Features",
       "dialog_node": "node_9_1595412287246",
       "previous_sibling": "node_2_1595396273919"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1596266825509",
+      "conditions": "$response",
+      "dialog_node": "response_3_1596266888335"
     },
     {
       "type": "response_condition",
