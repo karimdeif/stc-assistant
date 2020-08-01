@@ -94,25 +94,6 @@
   ],
   "dialog_nodes": [
     {
-      "type": "response_condition",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "$response.results.text"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_9_1595412319767",
-      "conditions": "$response",
-      "dialog_node": "response_7_1596266905917"
-    },
-    {
       "type": "standard",
       "title": "Product_Features",
       "actions": [
@@ -199,6 +180,25 @@
       "conditions": "anything_else",
       "dialog_node": "response_5_1596100110179",
       "previous_sibling": "response_5_1596100109570"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results.text"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1595412319767",
+      "conditions": "$response.results",
+      "dialog_node": "response_7_1596266905917"
     },
     {
       "type": "standard",
