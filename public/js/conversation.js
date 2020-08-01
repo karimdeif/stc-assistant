@@ -234,6 +234,8 @@ var ConversationPanel = (function () {
   }
 
   function getResponse(responses, gen) {
+
+    console.log("##### gen  #########");
     console.log(gen);
     var title = '', description = '';
     if (gen.hasOwnProperty('title')) {
