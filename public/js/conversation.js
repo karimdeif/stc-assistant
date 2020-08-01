@@ -235,8 +235,8 @@ var ConversationPanel = (function () {
 
   function getResponse(responses, gen) {
 
-    console.log("##### gen  #########");
-    console.log(gen);
+    //console.log("##### gen  #########");
+    //console.log(gen);
     var title = '', description = '';
     if (gen.hasOwnProperty('title')) {
       title = gen.title;
@@ -257,8 +257,8 @@ var ConversationPanel = (function () {
           //remove first and last character []
           var ret_raw = gen.text.slice(1, -1);
 
-          console.log("##### ret_raw sliced #########");
-          console.log(ret_raw);
+          //console.log("##### ret_raw sliced #########");
+          //console.log(ret_raw);
           
           var start_table_pattern = /<table/i;
           var end_table_pattern = /<\/table>/i;
@@ -280,8 +280,8 @@ var ConversationPanel = (function () {
             //parse out subtitle and text
             var ret_raw_json = JSON.parse(ret_raw);
 
-            console.log("##### ret_raw_json #########");
-            console.log(ret_raw_json);
+            //console.log("##### ret_raw_json #########");
+            //console.log(ret_raw_json);
 
             var resp_text = '<div>' + ret_raw_json.subtitle[0] + '</div>';
             resp_text += '<div>' + ret_raw_json.text[0] + '</div>';
