@@ -234,6 +234,7 @@ var ConversationPanel = (function () {
   }
 
   function getResponse(responses, gen) {
+    console.log(gen);
     var title = '', description = '';
     if (gen.hasOwnProperty('title')) {
       title = gen.title;
@@ -268,6 +269,20 @@ var ConversationPanel = (function () {
       responses.push({
         type: gen.response_type,
         innerhtml: title + description + list
+      });
+    }
+    else if (gen.response_type === 'search') {
+      var len = gen.results[0].body.length;
+      var waResponse = gen.results[0].body;
+      var cleanedResponse = waResponse.substring(2,len-2);
+      const searchRegExp = /•/g;
+      cleanedResponse = cleanedResponse.replace(searchRegExp, '<br><br>');
+      cleanedResponse = cleanedResponse.replace('<br>','');
+      cleanedResponse = cleanedResponse.replace('<br>','');
+      responses.push({
+        type: 'text',
+        //innerhtml: '<b>' + gen.results[0].title + '</b>' + gen.results[0].body
+        innerhtml: cleanedResponse
       });
     }
   }
