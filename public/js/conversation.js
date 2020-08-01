@@ -252,39 +252,41 @@ var ConversationPanel = (function () {
       });
     } else if (gen.response_type === 'text') {
             
-        if(ret_raw.match(end_table_pattern)) {
-
+        if (gen.text.startsWith("[")) {
+        
           // check for tables
           var start_table_pattern = /<table/i;
           var end_table_pattern = /<\/table>/i;
-          var start_table_position = ret_raw.search(start_table_pattern);
-          var end_table_position = ret_raw.search(end_table_pattern);
 
-          var ret_table = ret_raw.substring(start_table_position, end_table_position);
+          if(ret_raw.match(end_table_pattern)) {
 
-          responses.push({
-            type: gen.response_type,
-            innerhtml: ret_table
-          });
+            var start_table_position = ret_raw.search(start_table_pattern);
+            var end_table_position = ret_raw.search(end_table_pattern);
+  
+            var ret_table = ret_raw.substring(start_table_position, end_table_position);
+  
+            responses.push({
+              type: gen.response_type,
+              innerhtml: ret_table
+            });
+  
+          } else {
+            console.log("##### ret_raw  #########");
+            console.log(ret_raw);
 
-        } else if (gen.text.startsWith("[")) {
-        
-          console.log("##### ret_raw  #########");
-          console.log(ret_raw);
+            //remove first and last character []
+            var ret_raw = gen.text.slice(1, -1);
+            //parse out subtitle and text
+            var ret_raw_json = JSON.parse(ret_raw);
 
-          //remove first and last character []
-          var ret_raw = gen.text.slice(1, -1);
-          //parse out subtitle and text
-          var ret_raw_json = JSON.parse(ret_raw);
+            var resp_text = '<div>' + ret_raw_json.subtitle() + '</div>';
+            resp_text += '<div>' + ret_raw_json.text[0] + '</div>';
 
-          var resp_text = '<div>' + ret_raw_json.subtitle() + '</div>';
-          resp_text += '<div>' + ret_raw_json.text[0] + '</div>';
-
-          responses.push({
-            type: gen.response_type,
-            innerhtml: resp_text
-          });
-        
+            responses.push({
+              type: gen.response_type,
+              innerhtml: resp_text
+            });
+          }
         } else {
 
           responses.push({
