@@ -251,16 +251,12 @@ var ConversationPanel = (function () {
         innerhtml: title + description + img
       });
     } else if (gen.response_type === 'text') {
-
-      //remove first and last character []
-      var ret_raw = gen.text.slice(1, -1);
-      
-      // check for tables
-      var start_table_pattern = /<table/i;
-      var end_table_pattern = /<\/table>/i;
-      
+            
         if(ret_raw.match(end_table_pattern)) {
-      
+
+          // check for tables
+          var start_table_pattern = /<table/i;
+          var end_table_pattern = /<\/table>/i;
           var start_table_position = ret_raw.search(start_table_pattern);
           var end_table_position = ret_raw.search(end_table_pattern);
 
@@ -271,20 +267,29 @@ var ConversationPanel = (function () {
             innerhtml: ret_table
           });
 
-        } else{
-
+        } else if (gen.text.startsWith("[")) {
+        
           console.log("##### ret_raw  #########");
           console.log(ret_raw);
+
+          //remove first and last character []
+          var ret_raw = gen.text.slice(1, -1);
           //parse out subtitle and text
           var ret_raw_json = JSON.parse(ret_raw);
 
           var resp_text = '<div>' + ret_raw_json.subtitle() + '</div>';
           resp_text += '<div>' + ret_raw_json.text[0] + '</div>';
 
-
           responses.push({
             type: gen.response_type,
             innerhtml: resp_text
+          });
+        
+        } else {
+
+          responses.push({
+            type: gen.response_type,
+            innerhtml: gen.text
           });
         }
 
