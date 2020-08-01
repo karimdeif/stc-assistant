@@ -273,6 +273,8 @@ var ConversationPanel = (function () {
 
         } else{
 
+          console.log("##### ret_raw  #########");
+          console.log(ret_raw);
           //parse out subtitle and text
           var ret_raw_json = JSON.parse(ret_raw);
 
