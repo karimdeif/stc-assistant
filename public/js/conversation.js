@@ -249,10 +249,31 @@ var ConversationPanel = (function () {
         innerhtml: title + description + img
       });
     } else if (gen.response_type === 'text') {
-      responses.push({
-        type: gen.response_type,
-        innerhtml: gen.text
-      });
+
+      var ret_raw = gen.text;
+      // check for tables
+      var start_table_pattern = /<table/i;
+      var end_table_pattern = /<\/table>/i;
+      
+        if(ret_raw.match(end_table_pattern)) {
+      
+          var start_table_position = ret_raw.search(start_table_pattern);
+          var end_table_position = ret_raw.search(end_table_pattern);
+
+          var ret_table = ret_raw.substring(start_table_position, end_table_position);
+
+          responses.push({
+            type: gen.response_type,
+            innerhtml: ret_table
+          });
+
+        } else{
+          responses.push({
+            type: gen.response_type,
+            innerhtml: ret_raw
+          });
+        }
+
     } else if (gen.response_type === 'pause') {
       responses.push({
         type: gen.response_type,
