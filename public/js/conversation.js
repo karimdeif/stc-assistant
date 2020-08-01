@@ -254,7 +254,12 @@ var ConversationPanel = (function () {
             
         if (gen.text.startsWith("[")) {
         
-          // check for tables
+          //remove first and last character []
+          var ret_raw = gen.text.slice(1, -1);
+
+          console.log("##### ret_raw sliced #########");
+          console.log(ret_raw);
+          
           var start_table_pattern = /<table/i;
           var end_table_pattern = /<\/table>/i;
 
@@ -271,13 +276,12 @@ var ConversationPanel = (function () {
             });
   
           } else {
-            console.log("##### ret_raw  #########");
-            console.log(ret_raw);
-
-            //remove first and last character []
-            var ret_raw = gen.text.slice(1, -1);
+          
             //parse out subtitle and text
             var ret_raw_json = JSON.parse(ret_raw);
+
+            console.log("##### ret_raw_json #########");
+            console.log(ret_raw_json);
 
             var resp_text = '<div>' + ret_raw_json.subtitle() + '</div>';
             resp_text += '<div>' + ret_raw_json.text[0] + '</div>';
