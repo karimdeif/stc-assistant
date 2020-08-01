@@ -11,6 +11,15 @@
       "description": ""
     },
     {
+      "intent": "All_Products_Inquiry",
+      "examples": [
+        {
+          "text": "what products do you sell"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "Product_Packages_Prices",
       "examples": [
         {
@@ -93,6 +102,47 @@
     }
   ],
   "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "General_Product Information",
+      "output": {
+        "generic": [
+          {
+            "title": "What Information about @product would you like ?",
+            "options": [
+              {
+                "label": "Features of @product",
+                "value": {
+                  "input": {
+                    "text": "what are the features of @product"
+                  }
+                }
+              },
+              {
+                "label": "Value Proposition of @product",
+                "value": {
+                  "input": {
+                    "text": "what is value proposition of @product"
+                  }
+                }
+              },
+              {
+                "label": "Package and Prices of @product",
+                "value": {
+                  "input": {
+                    "text": "package and prices of @product"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#General_Product_Information",
+      "dialog_node": "node_2_1595396273919",
+      "previous_sibling": "node_1_1596280238096"
+    },
     {
       "type": "response_condition",
       "parent": "node_4_1596266825509",
@@ -253,33 +303,33 @@
     },
     {
       "type": "standard",
-      "title": "General_Product Information",
+      "title": "All_Products",
       "output": {
         "generic": [
           {
-            "title": "What Information about @product would you like ?",
+            "title": "",
             "options": [
               {
-                "label": "Features of @product",
+                "label": "DDOS product",
                 "value": {
                   "input": {
-                    "text": "what are the features of @product"
+                    "text": "tell me about ddos"
                   }
                 }
               },
               {
-                "label": "Value Proposition of @product",
+                "label": "Safe Link product",
                 "value": {
                   "input": {
-                    "text": "what is value proposition of @product"
+                    "text": "tell me about safelink"
                   }
                 }
               },
               {
-                "label": "Package and Prices of @product",
+                "label": "Info Mind product",
                 "value": {
                   "input": {
-                    "text": "package and prices of @product"
+                    "text": "tell me about Info Mind"
                   }
                 }
               }
@@ -288,8 +338,8 @@
           }
         ]
       },
-      "conditions": "#General_Product_Information",
-      "dialog_node": "node_2_1595396273919",
+      "conditions": "#All_Products_Inquiry",
+      "dialog_node": "node_1_1596280238096",
       "previous_sibling": "Welcome"
     },
     {
