@@ -282,10 +282,17 @@ var ConversationPanel = (function () {
 
             //console.log("##### ret_raw_json #########");
             //console.log(ret_raw_json);
+            
+            
 
+          if (isArray(ret_raw_json.subtitle)){
             var resp_text = '<div>' + ret_raw_json.subtitle[0] + '</div>';
             resp_text += '<div>' + ret_raw_json.text[0] + '</div>';
-
+          }
+          else{
+            var resp_text = '<div>' + ret_raw_json.subtitle + '</div>';
+            resp_text += '<div>' + ret_raw_json.text[0] + '</div>';
+          }
             responses.push({
               type: gen.response_type,
               innerhtml: resp_text
