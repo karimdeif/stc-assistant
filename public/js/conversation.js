@@ -285,7 +285,7 @@ var ConversationPanel = (function () {
             
             
 
-          if (isArray(ret_raw_json.subtitle)){
+          if (Array.isArray(ret_raw_json.subtitle)){
             var resp_text = '<div>' + ret_raw_json.subtitle[0] + '</div>';
             resp_text += '<div>' + ret_raw_json.text[0] + '</div>';
           }
