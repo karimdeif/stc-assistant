@@ -2,40 +2,595 @@
   "name": "STC-Demo-003-Dialog-Skill",
   "intents": [
     {
+      "intent": "Safe_Link",
+      "examples": [
+        {
+          "text": "tell me about safe link?"
+        },
+        {
+          "text": "what is safe link?"
+        },
+        {
+          "text": "what is safe link service?"
+        },
+        {
+          "text": "safe link"
+        },
+        {
+          "text": "safelink"
+        }
+      ],
+      "description": "User ask about Safe Link collection "
+    },
+    {
+      "intent": "General_Ending",
+      "examples": [
+        {
+          "text": "Bye bye"
+        },
+        {
+          "text": "Catch you later"
+        },
+        {
+          "text": "Cya later"
+        },
+        {
+          "text": "Ending this session"
+        },
+        {
+          "text": "Have a nice day?"
+        },
+        {
+          "text": "Hey bot go away"
+        },
+        {
+          "text": "I am leaving"
+        },
+        {
+          "text": "I have got to go"
+        },
+        {
+          "text": "I want to quit"
+        },
+        {
+          "text": "I'm done"
+        },
+        {
+          "text": "I'm leaving now"
+        },
+        {
+          "text": "Im done"
+        },
+        {
+          "text": "It was nice chatting with you"
+        },
+        {
+          "text": "Shut up"
+        },
+        {
+          "text": "Stop doing this"
+        },
+        {
+          "text": "Stop talking to me"
+        },
+        {
+          "text": "tata"
+        },
+        {
+          "text": "Thank you for your time"
+        },
+        {
+          "text": "That is all"
+        },
+        {
+          "text": "Bye now"
+        },
+        {
+          "text": "End trial"
+        },
+        {
+          "text": "Finished now, good bye"
+        },
+        {
+          "text": "Get lost"
+        },
+        {
+          "text": "Go away"
+        },
+        {
+          "text": "Go off"
+        },
+        {
+          "text": "Going now"
+        },
+        {
+          "text": "Good. bye."
+        },
+        {
+          "text": "Goodbye"
+        },
+        {
+          "text": "goodnight"
+        },
+        {
+          "text": "I am out of here"
+        },
+        {
+          "text": "I d like to stop doing this"
+        },
+        {
+          "text": "Im good thank you"
+        },
+        {
+          "text": "ok fine"
+        },
+        {
+          "text": "Ok goodbye"
+        },
+        {
+          "text": "See you"
+        },
+        {
+          "text": "See you later"
+        },
+        {
+          "text": "Thanks, bye!"
+        },
+        {
+          "text": "That's everything"
+        },
+        {
+          "text": "Time to go"
+        },
+        {
+          "text": "no"
+        }
+      ],
+      "description": "End the conversation"
+    },
+    {
+      "intent": "Product_Market_Segment",
+      "examples": [
+        {
+          "text": "what is the market segment of security pak?"
+        },
+        {
+          "text": "tell me about the market segment of security pak?"
+        }
+      ],
+      "description": "User ask about product market segment"
+    },
+    {
+      "intent": "STCS_Misc",
+      "examples": [
+        {
+          "text": "tell me about security misc?"
+        },
+        {
+          "text": "STCS misc"
+        },
+        {
+          "text": "STCSmisc"
+        },
+        {
+          "text": "what is STCS misc?"
+        }
+      ],
+      "description": "User ask about STCS misc collection"
+    },
+    {
+      "intent": "Product_Segment_Target",
+      "examples": [
+        {
+          "text": "what is the customer segment target of safe link?"
+        },
+        {
+          "text": "what is the customer segment target?"
+        },
+        {
+          "text": "What is the segment target of safe link service?"
+        }
+      ],
+      "description": "User ask about Segment Target"
+    },
+    {
+      "intent": "Manage_DDOS",
+      "examples": [
+        {
+          "text": "tell me about manage ddos?"
+        },
+        {
+          "text": "tell me about ddos?"
+        },
+        {
+          "text": "What is Manage DDOS?"
+        },
+        {
+          "text": "What is DDOS?"
+        }
+      ],
+      "description": "User ask about Manage_DDOS collection "
+    },
+    {
       "intent": "Product_Value_proposition",
       "examples": [
         {
-          "text": "What is the value proposition"
+          "text": "what is the value proposition of safe link service?"
+        },
+        {
+          "text": "What is the value proposition of info Mind?"
+        },
+        {
+          "text": "what is the value proposition of Manage DDOS?"
         }
       ],
-      "description": ""
+      "description": "User ask about value proposition"
     },
     {
-      "intent": "All_Products_Inquiry",
+      "intent": "General_Greetings",
       "examples": [
         {
-          "text": "what products do you sell"
+          "text": "Good day"
+        },
+        {
+          "text": "Good evening"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Good to see you"
+        },
+        {
+          "text": "Greetings"
+        },
+        {
+          "text": "Have you been well?"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hello I am looking for some help here"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "hey buddy"
+        },
+        {
+          "text": "Hey how are you doing"
+        },
+        {
+          "text": "Hey there"
+        },
+        {
+          "text": "Hey there all"
+        },
+        {
+          "text": "Hey twin"
+        },
+        {
+          "text": "Hey you"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "Hi advisor"
+        },
+        {
+          "text": "Hi there"
+        },
+        {
+          "text": "hola"
+        },
+        {
+          "text": "How are things going?"
+        },
+        {
+          "text": "How are you today?"
+        },
+        {
+          "text": "how are you?"
+        },
+        {
+          "text": "How have you been?"
+        },
+        {
+          "text": "How is it going?"
+        },
+        {
+          "text": "how r u"
+        },
+        {
+          "text": "how u doing"
+        },
+        {
+          "text": "Looking good eve"
+        },
+        {
+          "text": "Ok take me back"
+        },
+        {
+          "text": "ola"
+        },
+        {
+          "text": "sup"
+        },
+        {
+          "text": "What's new?"
+        },
+        {
+          "text": "What's up?"
+        },
+        {
+          "text": "Who is this?"
+        },
+        {
+          "text": "You there"
+        },
+        {
+          "text": "yes"
         }
       ],
-      "description": ""
+      "description": "User greeting the bot."
+    },
+    {
+      "intent": "Info_Mind",
+      "examples": [
+        {
+          "text": "tell me about info mind?"
+        },
+        {
+          "text": "what is info mind?"
+        },
+        {
+          "text": "What is infoMind?"
+        }
+      ],
+      "description": "User ask about Info_Mind collection "
+    },
+    {
+      "intent": "Product_Service_FAQs",
+      "examples": [
+        {
+          "text": "What are the standard offering?"
+        },
+        {
+          "text": "What are the bundle for documents?"
+        },
+        {
+          "text": "What are the available document sizes of infomind?"
+        },
+        {
+          "text": "What is the available speed offered?"
+        },
+        {
+          "text": "What are the bundle components offered?"
+        },
+        {
+          "text": "What are the bundle for documents of infomind?"
+        },
+        {
+          "text": "What is the standard offering for this service?"
+        }
+      ],
+      "description": "User ask about Service FAQs "
     },
     {
       "intent": "Product_Packages_Prices",
       "examples": [
         {
-          "text": "package and prices of"
+          "text": "What is the price of 1 Mbps package?"
+        },
+        {
+          "text": "what is the packages and prices of info mind?"
+        },
+        {
+          "text": "what is the packages and prices of ddos?"
+        },
+        {
+          "text": "What is the price of 2 Mbps package?"
+        },
+        {
+          "text": "What is the price of 4 Mbps package?"
+        },
+        {
+          "text": "What is the price of 10 Mbps package?"
+        },
+        {
+          "text": "What is the price of 20 Mbps package?"
+        },
+        {
+          "text": "What is the price of 2 Gbps package?"
+        },
+        {
+          "text": "What is the price of 100 package?"
+        },
+        {
+          "text": "What is the price of 150 package?"
+        },
+        {
+          "text": "What is the price of 150 m/s package?"
+        },
+        {
+          "text": "What is the price of 200 m/s package?"
+        },
+        {
+          "text": "What is the price of 340 m/s package?"
+        },
+        {
+          "text": "What is the price of 400 m/s package?"
+        },
+        {
+          "text": "what is the packages and prices of safe link?"
+        },
+        {
+          "text": "What is the price of 1 Gbps package?"
+        },
+        {
+          "text": "What is the price of 200 package?"
+        },
+        {
+          "text": "What is the price of 250 package?"
+        },
+        {
+          "text": "What is the price of 300 package?"
+        },
+        {
+          "text": "What is the price of 340 package?"
+        },
+        {
+          "text": "What is the price of 400 package?"
+        },
+        {
+          "text": "What is the price of 100 m/s package?"
+        },
+        {
+          "text": "What is the price of 250 m/s package?"
+        },
+        {
+          "text": "What is the price of 300 m/s package?"
         }
       ],
-      "description": ""
+      "description": "User ask about the packages and prices"
     },
     {
-      "intent": "General_Product_Information",
+      "intent": "Security_Pak",
       "examples": [
         {
-          "text": "tell me about"
+          "text": "what is Security pak ?"
+        },
+        {
+          "text": "tell me about security pak?"
+        },
+        {
+          "text": "security pak"
+        },
+        {
+          "text": "securitypak"
         }
       ],
-      "description": ""
+      "description": "User ask about Security Pak collection "
+    },
+    {
+      "intent": "User_General_Input",
+      "examples": [
+        {
+          "text": "Can you please give me a list of the types of things you can help me with?"
+        },
+        {
+          "text": "Can you tell me what services you are able to help me with?"
+        },
+        {
+          "text": "Do you have a list of things I can talk to you about?"
+        },
+        {
+          "text": "Help now"
+        },
+        {
+          "text": "Hi, what do you do?"
+        },
+        {
+          "text": "How can I use you?"
+        },
+        {
+          "text": "How can you help me?"
+        },
+        {
+          "text": "How can you solve my problems?"
+        },
+        {
+          "text": "How do I use you?"
+        },
+        {
+          "text": "I do not know what to ask"
+        },
+        {
+          "text": "I want offers"
+        },
+        {
+          "text": "I want use cases"
+        },
+        {
+          "text": "I would like to know about your offerings"
+        },
+        {
+          "text": "I'd like to know what type of questions you can answer for me."
+        },
+        {
+          "text": "Is there anything you can help me with?"
+        },
+        {
+          "text": "need to know about product"
+        },
+        {
+          "text": "tell me about"
+        },
+        {
+          "text": "Tell me about what kind of things you do?"
+        },
+        {
+          "text": "tell me about your products"
+        },
+        {
+          "text": "Tell me something"
+        },
+        {
+          "text": "What are my options that you can help with?"
+        },
+        {
+          "text": "What are my options?"
+        },
+        {
+          "text": "What are you able to deal with?"
+        },
+        {
+          "text": "What are you able to understand?"
+        },
+        {
+          "text": "What are you capable of?"
+        },
+        {
+          "text": "What are you good at?"
+        },
+        {
+          "text": "What are you used for?"
+        },
+        {
+          "text": "What are your skills?"
+        },
+        {
+          "text": "What can I ask you to do?"
+        },
+        {
+          "text": "What do you do?"
+        },
+        {
+          "text": "What do you handle?"
+        },
+        {
+          "text": "what do you talk about"
+        },
+        {
+          "text": "What else can you help me with?"
+        },
+        {
+          "text": "What features are in here?"
+        },
+        {
+          "text": "What is this 4?"
+        },
+        {
+          "text": "What kinds of things can you do?"
+        },
+        {
+          "text": "what products do you sell"
+        }
+      ],
+      "description": "User ask general question"
     },
     {
       "intent": "Product_Features",
@@ -44,37 +599,137 @@
           "text": "what are the features of"
         },
         {
+          "text": "What are the features of Safe link service?"
+        },
+        {
+          "text": "What are the features of infoMind?"
+        },
+        {
+          "text": "What are the features of DDOS service?"
+        },
+        {
           "text": "what are the product features"
         }
       ],
-      "description": ""
+      "description": "User ask about the features"
+    },
+    {
+      "intent": "Product_Description",
+      "examples": [
+        {
+          "text": "What is the description of safe link?"
+        },
+        {
+          "text": "What is the description of ddos?"
+        },
+        {
+          "text": "What is the description of security pak?"
+        },
+        {
+          "text": "What is the description of STCS Misk?"
+        },
+        {
+          "text": "What is the description of infomind?"
+        }
+      ],
+      "description": "User ask about product description"
+    },
+    {
+      "intent": "Product_Trouble_Shooting",
+      "examples": [
+        {
+          "text": "what is the trouble shooting of security pak?"
+        },
+        {
+          "text": "tell me about the trouble shooting of security pak?"
+        }
+      ],
+      "description": "User ask about product trouble shooting"
+    },
+    {
+      "intent": "Product_Business_Advantages",
+      "examples": [
+        {
+          "text": "what is the business advantage of security pak"
+        },
+        {
+          "text": "tell me about business advantage of security pak"
+        }
+      ],
+      "description": "User ask about Product business advantages"
     }
   ],
   "entities": [
+    {
+      "entity": "HowRU",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "sup",
+          "synonyms": [
+            "how are you",
+            "how r u",
+            "how you been doing",
+            "how u been doing",
+            "whatsup",
+            "whats up",
+            "how are you doing",
+            "how r u doing",
+            "tell me about your health",
+            "how is your health",
+            "how are ya",
+            "how is it going ",
+            "how are ya doing"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
     {
       "entity": "product",
       "values": [
         {
           "type": "synonyms",
-          "value": "Info Mind",
+          "value": "STCS Misc",
           "synonyms": [
-            "infomind"
+            " STCSMisc",
+            " STCSMiscService "
           ]
         },
         {
           "type": "synonyms",
-          "value": "Safe Link",
+          "value": "Security Pak",
           "synonyms": [
-            "SafeLink",
-            "Safe Link Service",
-            "SafeLinkService"
+            "SecurityPak",
+            "SecurityPakService "
           ]
         },
         {
           "type": "synonyms",
           "value": "ddos",
           "synonyms": [
-            "distributed denial of service"
+            "distributed denial of service",
+            "Manage ddos ",
+            "manage ddos service ",
+            "manageddos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "InfoMind",
+          "synonyms": [
+            "infomind",
+            "Info Mind",
+            "Info Mind Service"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Safe Link",
+          "synonyms": [
+            "SafeLinkService",
+            "Safe Link Service",
+            "SafeLink"
           ]
         }
       ],
@@ -103,48 +758,135 @@
   ],
   "dialog_nodes": [
     {
-      "type": "standard",
-      "title": "General_Product Information",
+      "type": "response_condition",
       "output": {
         "generic": [
           {
-            "title": "What Information about @product would you like ?",
+            "values": [
+              {
+                "text": "Try again later "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1596613329292",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1596613329292",
+      "previous_sibling": "response_6_1596613329292"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Try again later "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1596613329292",
+      "conditions": "anything_else",
+      "dialog_node": "response_4_1596613329292",
+      "previous_sibling": "response_3_1596613329292"
+    },
+    {
+      "type": "standard",
+      "title": "Manage_DDOS",
+      "output": {
+        "generic": [
+          {
+            "title": "What do you like to know about? ",
             "options": [
               {
-                "label": "Features of @product",
+                "label": "Description of @product ",
                 "value": {
                   "input": {
-                    "text": "what are the features of @product"
+                    "text": "Description of @product   "
                   }
                 }
               },
               {
-                "label": "Value Proposition of @product",
+                "label": "Features of @product ",
                 "value": {
                   "input": {
-                    "text": "what is value proposition of @product"
+                    "text": "Features of @product "
                   }
                 }
               },
               {
-                "label": "Package and Prices of @product",
+                "label": "Value Proposition of @product ",
                 "value": {
                   "input": {
-                    "text": "package and prices of @product"
+                    "text": "Value Proposition of @product "
+                  }
+                }
+              },
+              {
+                "label": "Packages Prices of @product",
+                "value": {
+                  "input": {
+                    "text": "Packages Prices of @product "
                   }
                 }
               }
             ],
+            "description": "",
             "response_type": "option"
           }
         ]
       },
-      "conditions": "#General_Product_Information",
-      "dialog_node": "node_2_1595396273919",
+      "conditions": "#Manage_DDOS",
+      "dialog_node": "node_4_1596612141342",
       "previous_sibling": "node_1_1596280238096"
     },
     {
+      "type": "standard",
+      "title": "Product_Features",
+      "output": {},
+      "parent": "node_17_1596613546019",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "search_query": "product features",
+            "search_entity": "@product"
+          },
+          "result_variable": "response"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Product_Features",
+      "dialog_node": "node_21_1596613546026",
+      "previous_sibling": "node_18_1596613546026"
+    },
+    {
       "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Try again later "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
       "parent": "node_4_1596266825509",
       "conditions": "anything_else",
       "dialog_node": "response_4_1596266889606",
@@ -153,6 +895,7 @@
     {
       "type": "standard",
       "title": "Product_Value_Proposition",
+      "parent": "node_4_1596612141342",
       "actions": [
         {
           "name": "main_webhook",
@@ -188,14 +931,478 @@
           }
         ]
       },
+      "parent": "node_18_1596613546026",
+      "conditions": "anything_else",
+      "dialog_node": "response_20_1596613546026",
+      "previous_sibling": "response_19_1596613546026"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              },
+              {
+                "text": "I didn't get you, can you rephrase your query."
+              },
+              {
+                "text": "Can you provide more details please"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_2_1596598715326",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Product_Trouble_Shooting",
+      "parent": "node_8_1596650000406",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "search_query": "Trouble Shooting",
+            "search_entity": "@product"
+          },
+          "result_variable": "response"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Product_Trouble_Shooting",
+      "dialog_node": "node_2_1596666988039",
+      "previous_sibling": "node_4_1596666972417"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Try again later "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1596666960928",
+      "conditions": "anything_else",
+      "dialog_node": "response_6_1596671059857",
+      "previous_sibling": "response_10_1596671058094"
+    },
+    {
+      "type": "standard",
+      "title": "Safe_Link",
+      "output": {
+        "generic": [
+          {
+            "title": "What do you like to know about? ",
+            "options": [
+              {
+                "label": "Description of @product ",
+                "value": {
+                  "input": {
+                    "text": "Description of @product "
+                  }
+                }
+              },
+              {
+                "label": "Features of @product ",
+                "value": {
+                  "input": {
+                    "text": "Features of @product "
+                  }
+                }
+              },
+              {
+                "label": "Value Proposition of @product ",
+                "value": {
+                  "input": {
+                    "text": "Value Proposition of @product "
+                  }
+                }
+              },
+              {
+                "label": "Packages and Prices of @product",
+                "value": {
+                  "input": {
+                    "text": "Packages and Prices of @product"
+                  }
+                }
+              },
+              {
+                "label": "Customer Segment Target of @product ",
+                "value": {
+                  "input": {
+                    "text": "Customer Segment Target of  @product "
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#Safe_Link",
+      "dialog_node": "node_10_1596619166029",
+      "previous_sibling": "node_17_1596613546019"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Try again later "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
       "parent": "node_9_1595412287246",
       "conditions": "anything_else",
       "dialog_node": "response_5_1596100110179",
       "previous_sibling": "response_5_1596100109570"
     },
     {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening this is STCS Assistant. How may I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "now().after('17:00:00')",
+      "dialog_node": "response_4_1596583368837",
+      "previous_sibling": "response_9_1596583367219"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Try again later "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_27_1596613546026",
+      "conditions": "anything_else",
+      "dialog_node": "response_29_1596613546026",
+      "previous_sibling": "response_28_1596613546026"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Try again later "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1596594286944",
+      "conditions": "anything_else",
+      "dialog_node": "response_1_1596594535495",
+      "previous_sibling": "response_2_1596594534017"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_3_1596666969246",
+      "conditions": "anything_else",
+      "dialog_node": "response_6_1596671916006",
+      "previous_sibling": "response_8_1596671913894"
+    },
+    {
+      "type": "standard",
+      "title": "Product_Business_Advantages",
+      "parent": "node_8_1596650000406",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "search_query": "Business Advantages",
+            "search_entity": "@product"
+          },
+          "result_variable": "response"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Product_Business_Advantages",
+      "dialog_node": "node_4_1596666972417",
+      "previous_sibling": "node_3_1596666969246"
+    },
+    {
+      "type": "standard",
+      "title": "Product_Features",
+      "parent": "node_4_1596612141342",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "search_query": "product features",
+            "search_entity": "@product"
+          },
+          "result_variable": "response"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Product_Features",
+      "dialog_node": "node_9_1595412287246",
+      "previous_sibling": "node_2_1596594286944"
+    },
+    {
+      "type": "standard",
+      "title": "Security_Pak",
+      "output": {
+        "generic": [
+          {
+            "title": "What do you like to know about? ",
+            "options": [
+              {
+                "label": "Description of @product ",
+                "value": {
+                  "input": {
+                    "text": "Description of @product "
+                  }
+                }
+              },
+              {
+                "label": "Market Segment of @product ",
+                "value": {
+                  "input": {
+                    "text": "Market Segment of @product "
+                  }
+                }
+              },
+              {
+                "label": "Business Advantages of @product ",
+                "value": {
+                  "input": {
+                    "text": "Business Advantages of @product "
+                  }
+                }
+              },
+              {
+                "label": "Trouble Shooting of @product ",
+                "value": {
+                  "input": {
+                    "text": "Trouble Shooting of @product "
+                  }
+                }
+              },
+              {
+                "label": "",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#Security_Pak",
+      "dialog_node": "node_8_1596650000406",
+      "previous_sibling": "node_10_1596619166029"
+    },
+    {
+      "type": "standard",
+      "title": "General_Ending",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for using STCS Assistant, if you have any question feel free to type here."
+              },
+              {
+                "text": "Thank you for using STCS Assistant, have a good day."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#General_Ending",
+      "dialog_node": "node_2_1596598715326",
+      "previous_sibling": "node_14_1596613329292"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Try again later "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_24_1596613546026",
+      "conditions": "anything_else",
+      "dialog_node": "response_26_1596613546026",
+      "previous_sibling": "response_25_1596613546026"
+    },
+    {
+      "type": "standard",
+      "title": "Product_Segment_Target",
+      "parent": "node_10_1596619166029",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "search_query": "Customer Segment Target of service",
+            "search_entity": "@product"
+          },
+          "result_variable": "response"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Product_Segment_Target",
+      "dialog_node": "node_6_1595501242476",
+      "previous_sibling": "node_11_1596613329292"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Try again later "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1596666972417",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1596674585711",
+      "previous_sibling": "response_1_1596674582467"
+    },
+    {
       "type": "standard",
       "title": "Product_Packages_Prices",
+      "output": {},
+      "parent": "node_17_1596613546019",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "search_query": "packages and prices",
+            "search_entity": "@product"
+          },
+          "result_variable": "response"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Product_Packages_Prices",
+      "dialog_node": "node_27_1596613546026",
+      "previous_sibling": "node_24_1596613546026"
+    },
+    {
+      "type": "standard",
+      "title": "Product_Features",
+      "output": {},
+      "parent": "node_10_1596619166029",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "search_query": "product features",
+            "search_entity": "@product"
+          },
+          "result_variable": "response"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Product_Features",
+      "dialog_node": "node_5_1596613329292",
+      "previous_sibling": "node_2_1596613329292"
+    },
+    {
+      "type": "standard",
+      "title": "Product_Packages_Prices",
+      "parent": "node_4_1596612141342",
       "actions": [
         {
           "name": "main_webhook",
@@ -218,13 +1425,15 @@
     },
     {
       "type": "standard",
-      "title": "Product_Features",
+      "title": "Product_Value_Proposition",
+      "output": {},
+      "parent": "node_17_1596613546019",
       "actions": [
         {
           "name": "main_webhook",
           "type": "webhook",
           "parameters": {
-            "search_query": "product features",
+            "search_query": "value proposition",
             "search_entity": "@product"
           },
           "result_variable": "response"
@@ -235,51 +1444,66 @@
           "mcr": true
         }
       },
-      "conditions": "#Product_Features",
-      "dialog_node": "node_9_1595412287246",
-      "previous_sibling": "node_2_1595396273919"
+      "conditions": "#Product_Value_proposition",
+      "dialog_node": "node_24_1596613546026",
+      "previous_sibling": "node_21_1596613546026"
     },
     {
       "type": "standard",
-      "title": "Anything else",
+      "title": "General_Information ",
       "output": {
         "generic": [
           {
-            "values": [
+            "title": "What product do you need help with?",
+            "options": [
               {
-                "text": "I didn't understand. You can try rephrasing."
+                "label": "DDOS product",
+                "value": {
+                  "input": {
+                    "text": "DDOS product"
+                  }
+                }
               },
               {
-                "text": "Can you reword your statement? I'm not understanding."
+                "label": "Safe Link product",
+                "value": {
+                  "input": {
+                    "text": "Safe Link product"
+                  }
+                }
               },
               {
-                "text": "I didn't get your meaning."
+                "label": "Info Mind product",
+                "value": {
+                  "input": {
+                    "text": "Info Mind product"
+                  }
+                }
+              },
+              {
+                "label": "Security Pak ",
+                "value": {
+                  "input": {
+                    "text": "Security Pak "
+                  }
+                }
+              },
+              {
+                "label": "STCS Misc",
+                "value": {
+                  "input": {
+                    "text": "STCS Misc"
+                  }
+                }
               }
             ],
-            "response_type": "text",
-            "selection_policy": "sequential"
+            "response_type": "option"
           }
         ]
       },
-      "conditions": "anything_else",
-      "dialog_node": "Anything else",
-      "previous_sibling": "node_6_1595501242476",
-      "disambiguation_opt_out": true
-    },
-    {
-      "type": "standard",
-      "output": {
-        "generic": [
-          {
-            "query": "",
-            "filter": "",
-            "query_type": "natural_language",
-            "response_type": "search_skill"
-          }
-        ]
-      },
-      "dialog_node": "node_6_1595501242476",
-      "previous_sibling": "node_4_1596266825509"
+      "conditions": "#User_General_Input",
+      "dialog_node": "node_1_1596280238096",
+      "previous_sibling": "node_7_1596583443305"
     },
     {
       "type": "response_condition",
@@ -288,7 +1512,92 @@
           {
             "values": [
               {
-                "text": ""
+                "text": "Good Afternoon this is STCS Assistant. How may I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "now().after('12:00:00') && now().before('16:59:59')",
+      "dialog_node": "response_9_1596583367219",
+      "previous_sibling": "response_4_1596583346170"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Try again later "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_14_1596613329292",
+      "conditions": "anything_else",
+      "dialog_node": "response_3_1596659687700",
+      "previous_sibling": "response_6_1596659685689"
+    },
+    {
+      "type": "standard",
+      "title": "Product_Value_Proposition",
+      "output": {},
+      "parent": "node_10_1596619166029",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "search_query": "value proposition",
+            "search_entity": "@product"
+          },
+          "result_variable": "response"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Product_Value_proposition",
+      "dialog_node": "node_8_1596613329292",
+      "previous_sibling": "node_5_1596613329292"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Try again later "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1595501242476",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1596561135276",
+      "previous_sibling": "response_5_1596561133444"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Try again later "
               }
             ],
             "response_type": "text",
@@ -303,44 +1612,375 @@
     },
     {
       "type": "standard",
-      "title": "All_Products",
+      "title": "Product_Packages_Prices",
+      "output": {},
+      "parent": "node_10_1596619166029",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "search_query": "packages and prices",
+            "search_entity": "@product"
+          },
+          "result_variable": "response"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Product_Packages_Prices",
+      "dialog_node": "node_11_1596613329292",
+      "previous_sibling": "node_8_1596613329292"
+    },
+    {
+      "type": "response_condition",
       "output": {
         "generic": [
           {
-            "title": "",
+            "values": [
+              {
+                "text": "Try again later "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_21_1596613546026",
+      "conditions": "anything_else",
+      "dialog_node": "response_23_1596613546026",
+      "previous_sibling": "response_22_1596613546026"
+    },
+    {
+      "type": "standard",
+      "title": "General Query to WD",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "search_query": "<?input.text?>",
+            "search_entity": "@product"
+          },
+          "result_variable": "response "
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_14_1596613329292",
+      "previous_sibling": "node_8_1596650000406"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#General_Greetings",
+      "dialog_node": "node_7_1596583443305",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Product_Market_Segment",
+      "parent": "node_8_1596650000406",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "": ""
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Product_Market_Segment",
+      "dialog_node": "node_3_1596666969246",
+      "previous_sibling": "node_9_1596666960928"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Try again later "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1596666988039",
+      "conditions": "anything_else",
+      "dialog_node": "response_8_1596676468193",
+      "previous_sibling": "response_10_1596676466392"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Try again later "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1596613329292",
+      "conditions": "anything_else",
+      "dialog_node": "response_10_1596613329292",
+      "previous_sibling": "response_9_1596613329292"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi. I am STCS Assistant. How may I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1596583443305",
+      "conditions": "#General_Greetings",
+      "dialog_node": "response_5_1596583552814",
+      "previous_sibling": "response_4_1596583578375"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Try again later "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_11_1596613329292",
+      "conditions": "anything_else",
+      "dialog_node": "response_13_1596613329292",
+      "previous_sibling": "response_12_1596613329292"
+    },
+    {
+      "type": "standard",
+      "title": "Info_Mind",
+      "output": {
+        "generic": [
+          {
+            "title": "What would you like to know about? ",
             "options": [
               {
-                "label": "DDOS product",
+                "label": "Description of @product ",
                 "value": {
                   "input": {
-                    "text": "tell me about ddos"
+                    "text": "Description of @product "
                   }
                 }
               },
               {
-                "label": "Safe Link product",
+                "label": "Features of @product ",
                 "value": {
                   "input": {
-                    "text": "tell me about safelink"
+                    "text": "Features of @product "
                   }
                 }
               },
               {
-                "label": "Info Mind product",
+                "label": "Value Proposition of @product ",
                 "value": {
                   "input": {
-                    "text": "tell me about Info Mind"
+                    "text": "Value Proposition of @product "
+                  }
+                }
+              },
+              {
+                "label": "Packages and Prices of @product",
+                "value": {
+                  "input": {
+                    "text": "Packages and Prices of @product"
+                  }
+                }
+              },
+              {
+                "label": "Customer Segment Target of @product ",
+                "value": {
+                  "input": {
+                    "text": "Customer Segment Target of @product "
                   }
                 }
               }
             ],
+            "description": "",
             "response_type": "option"
           }
         ]
       },
-      "conditions": "#All_Products_Inquiry",
-      "dialog_node": "node_1_1596280238096",
-      "previous_sibling": "Welcome"
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#Info_Mind",
+      "dialog_node": "node_17_1596613546019",
+      "previous_sibling": "node_4_1596612141342"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1596666969246",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_8_1596671913894"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1596594286944",
+      "conditions": "$response",
+      "dialog_node": "response_2_1596594534017"
+    },
+    {
+      "type": "standard",
+      "title": "Product_Description ",
+      "parent": "node_4_1596612141342",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "search_query": "product description",
+            "search_entity": "@product"
+          },
+          "result_variable": "response"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Product_Description",
+      "dialog_node": "node_2_1596594286944"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello there, I'm very well thank you. How may I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1596583443305",
+      "conditions": "@HowRU",
+      "dialog_node": "response_4_1596583578375"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1596666972417",
+      "conditions": "$response",
+      "dialog_node": "response_1_1596674582467"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1595501242476",
+      "conditions": "$response",
+      "dialog_node": "response_5_1596561133444"
     },
     {
       "type": "response_condition",
@@ -376,9 +2016,9 @@
           }
         ]
       },
-      "parent": "node_9_1595412319767",
+      "parent": "node_4_1596266825509",
       "conditions": "$response",
-      "dialog_node": "response_7_1596266905917"
+      "dialog_node": "response_3_1596266888335"
     },
     {
       "type": "response_condition",
@@ -395,19 +2035,18 @@
           }
         ]
       },
-      "parent": "node_4_1596266825509",
+      "parent": "node_9_1595412319767",
       "conditions": "$response",
-      "dialog_node": "response_3_1596266888335"
+      "dialog_node": "response_7_1596266905917"
     },
     {
-      "type": "standard",
-      "title": "Welcome",
+      "type": "response_condition",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Welcome to the STCS Assistant. How can I help you?"
+                "text": "Good Morning this is STCS Assistant. How may I help you?"
               }
             ],
             "response_type": "text",
@@ -415,8 +2054,289 @@
           }
         ]
       },
-      "conditions": "welcome",
-      "dialog_node": "Welcome"
+      "parent": "Welcome",
+      "conditions": "now().after('04:00:00') && now().before('11:59:59')",
+      "dialog_node": "response_4_1596583346170"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_14_1596613329292",
+      "conditions": "$response",
+      "dialog_node": "response_6_1596659685689"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_11_1596613329292",
+      "conditions": "$response",
+      "dialog_node": "response_12_1596613329292"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1596613329292",
+      "conditions": "$response",
+      "dialog_node": "response_6_1596613329292"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_27_1596613546026",
+      "conditions": "$response",
+      "dialog_node": "response_28_1596613546026"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1596613329292",
+      "conditions": "$response",
+      "dialog_node": "response_9_1596613329292"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1596666988039",
+      "conditions": "$response",
+      "dialog_node": "response_10_1596676466392"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1596613329292",
+      "conditions": "$response",
+      "dialog_node": "response_3_1596613329292"
+    },
+    {
+      "type": "standard",
+      "title": "Product_Description ",
+      "output": {},
+      "parent": "node_10_1596619166029",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "search_query": "product description ",
+            "search_entity": "@product"
+          },
+          "result_variable": "response"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Product_Description",
+      "dialog_node": "node_2_1596613329292"
+    },
+    {
+      "type": "standard",
+      "title": "Product_Description",
+      "parent": "node_8_1596650000406",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "search_query": "product description",
+            "search_entity": "@product"
+          },
+          "result_variable": "response"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Product_Description",
+      "dialog_node": "node_9_1596666960928"
+    },
+    {
+      "type": "standard",
+      "title": "Product_Description ",
+      "output": {},
+      "parent": "node_17_1596613546019",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "search_query": "product description",
+            "search_entity": "@product"
+          },
+          "result_variable": "response"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Product_Description",
+      "dialog_node": "node_18_1596613546026"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_24_1596613546026",
+      "conditions": "$response",
+      "dialog_node": "response_25_1596613546026"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_21_1596613546026",
+      "conditions": "$response",
+      "dialog_node": "response_22_1596613546026"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_18_1596613546026",
+      "conditions": "$response",
+      "dialog_node": "response_19_1596613546026"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1596666960928",
+      "conditions": "$response",
+      "dialog_node": "response_10_1596671058094"
     }
   ],
   "workspace_id": "5bb3e510-ab4e-47d7-af7a-6c34e7e7c7a0",
