@@ -956,14 +956,6 @@
                     "text": "Trouble Shooting of @product "
                   }
                 }
-              },
-              {
-                "label": "",
-                "value": {
-                  "input": {
-                    "text": ""
-                  }
-                }
               }
             ],
             "response_type": "option"
@@ -1113,7 +1105,7 @@
           "mcr": true
         }
       },
-      "conditions": "",
+      "conditions": "anything_else",
       "digress_in": "does_not_return",
       "dialog_node": "node_14_1596613329292",
       "previous_sibling": "node_8_1596650000406"
