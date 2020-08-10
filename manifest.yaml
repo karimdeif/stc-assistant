@@ -1,0 +1,3 @@
+applications:
+- name: stc-assistant
+  memory: 128M

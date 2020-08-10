@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // The ConversationPanel module is designed to handle
 // all display and behaviors of the conversation column of the app.
 /* eslint no-unused-vars: "off" */
@@ -251,60 +252,64 @@ var ConversationPanel = (function () {
         innerhtml: title + description + img
       });
     } else if (gen.response_type === 'text') {
-            
-        if (gen.text.startsWith("[")) {
+
+      //console.log('gen');
+      //console.log(gen);
+
+      //var ret_raw_json = JSON.parse(gen.text);
+
+      if ((gen.text.startsWith('['))) {
+
+        var ret_raw_json = JSON.parse(gen.text);
+
+        var start_table_pattern = /<table/i;
+        var end_table_pattern = /<\/table/i;
+
+        console.log('ret_raw_json');
+        console.log(ret_raw_json);
+
+        if(ret_raw_json[0].hasOwnProperty('question')){
+
+          console.log('question');
+
+          var resp_text = '<div>' + ret_raw_json[0].question[0] + '</div>';
+
+          if(!ret_raw_json[0].hasOwnProperty('answer')){
+
+            console.log('FOUND TABLE');
+
+            var ret_html = JSON.stringify(ret_raw_json[0].html);
+            var start_table_position = ret_html.search(start_table_pattern);
+            var end_table_position = ret_html.search(end_table_pattern);
         
-          //remove first and last character []
-          var ret_raw = gen.text.slice(1, -1);
+            var ret_table = ret_html.substring(start_table_position, end_table_position);
 
-          //console.log("##### ret_raw sliced #########");
-          //console.log(ret_raw);
-          
-          var start_table_pattern = /<table/i;
-          var end_table_pattern = /<\/table>/i;
+            resp_text += '<div>' + ret_table + '</div>';
 
-          if(ret_raw.match(end_table_pattern)) {
+          }else{
 
-            var start_table_position = ret_raw.search(start_table_pattern);
-            var end_table_position = ret_raw.search(end_table_pattern);
-  
-            var ret_table = ret_raw.substring(start_table_position, end_table_position);
-  
-            responses.push({
-              type: gen.response_type,
-              innerhtml: ret_table
-            });
-  
-          } else {
-          
-            //parse out subtitle and text
-            var ret_raw_json = JSON.parse(ret_raw);
+            var i ;
+            for (i = 0; i < ret_raw_json[0].answer.length; i++) {
+              resp_text += '<div>' + ret_raw_json[0].answer[i] + '</div>';
+            }
 
-            //console.log("##### ret_raw_json #########");
-            //console.log(ret_raw_json);
-            
-            
-
-          if (Array.isArray(ret_raw_json.subtitle)){
-            var resp_text = '<div>' + ret_raw_json.subtitle[0] + '</div>';
-            resp_text += '<div>' + ret_raw_json.text[0] + '</div>';
           }
-          else{
-            var resp_text = '<div>' + ret_raw_json.subtitle + '</div>';
-            resp_text += '<div>' + ret_raw_json.text[0] + '</div>';
-          }
-            responses.push({
-              type: gen.response_type,
-              innerhtml: resp_text
-            });
-          }
-        } else {
-
+  
           responses.push({
             type: gen.response_type,
-            innerhtml: gen.text
+            innerhtml: resp_text
           });
-        }
+
+
+        } 
+        
+      }else {
+
+        responses.push({
+          type: gen.response_type,
+          innerhtml: gen.text
+        });
+      }
 
     } else if (gen.response_type === 'pause') {
       responses.push({
