@@ -5,151 +5,358 @@
       "intent": "User_General_Input",
       "examples": [
         {
-          "text": "How can you help me?"
-        },
-        {
-          "text": "How do I use you?"
-        },
-        {
-          "text": "I do not know what to ask"
-        },
-        {
-          "text": "I want offers"
-        },
-        {
-          "text": "I want use cases"
-        },
-        {
-          "text": "I would like to know about your offerings"
-        },
-        {
-          "text": "I'd like to know what type of questions you can answer for me."
-        },
-        {
-          "text": "Is there anything you can help me with?"
-        },
-        {
-          "text": "need to know about product"
-        },
-        {
-          "text": "tell me about"
-        },
-        {
-          "text": "Tell me about what kind of things you do?"
-        },
-        {
-          "text": "tell me about your products"
-        },
-        {
-          "text": "Tell me something"
-        },
-        {
-          "text": "What are my options that you can help with?"
-        },
-        {
-          "text": "What are my options?"
-        },
-        {
-          "text": "What are you able to deal with?"
-        },
-        {
-          "text": "What are you able to understand?"
-        },
-        {
-          "text": "What are you capable of?"
-        },
-        {
-          "text": "What are you good at?"
-        },
-        {
-          "text": "What are you used for?"
-        },
-        {
-          "text": "What are your skills?"
-        },
-        {
-          "text": "What can I ask you to do?"
-        },
-        {
-          "text": "What do you do?"
-        },
-        {
-          "text": "What do you handle?"
-        },
-        {
-          "text": "what do you talk about"
+          "text": "What features are in here?"
         },
         {
           "text": "What else can you help me with?"
         },
         {
-          "text": "What features are in here?"
+          "text": "what do you talk about"
         },
         {
-          "text": "What is this 4?"
+          "text": "What do you handle?"
         },
         {
-          "text": "What kinds of things can you do?"
+          "text": "What do you do?"
         },
         {
-          "text": "what products do you sell"
+          "text": "What can I ask you to do?"
         },
         {
-          "text": "Can you please give me a list of the types of things you can help me with?"
+          "text": "What are your skills?"
         },
         {
-          "text": "Can you tell me what services you are able to help me with?"
+          "text": "What are you used for?"
         },
         {
-          "text": "Do you have a list of things I can talk to you about?"
+          "text": "What are you good at?"
         },
         {
-          "text": "Help now"
+          "text": "What are you capable of?"
         },
         {
-          "text": "Hi, what do you do?"
+          "text": "What are you able to understand?"
+        },
+        {
+          "text": "What are you able to deal with?"
+        },
+        {
+          "text": "What are my options?"
+        },
+        {
+          "text": "What are my options that you can help with?"
+        },
+        {
+          "text": "need to know about product"
+        },
+        {
+          "text": "Is there anything you can help me with?"
+        },
+        {
+          "text": "I'd like to know what type of questions you can answer for me."
+        },
+        {
+          "text": "I would like to know about your offerings"
+        },
+        {
+          "text": "I want use cases"
+        },
+        {
+          "text": "I want offers"
+        },
+        {
+          "text": "I do not know what to ask"
+        },
+        {
+          "text": "How do I use you?"
+        },
+        {
+          "text": "How can you solve my problems?"
+        },
+        {
+          "text": "How can you help me?"
         },
         {
           "text": "How can I use you?"
         },
         {
-          "text": "How can you solve my problems?"
+          "text": "Hi, what do you do?"
+        },
+        {
+          "text": "Help now"
+        },
+        {
+          "text": "Do you have a list of things I can talk to you about?"
+        },
+        {
+          "text": "Can you tell me what services you are able to help me with?"
+        },
+        {
+          "text": "Can you please give me a list of the types of things you can help me with?"
+        },
+        {
+          "text": "what are you offering"
+        },
+        {
+          "text": "what products do you sell"
+        },
+        {
+          "text": "What kinds of things can you do?"
+        },
+        {
+          "text": "What is this 4?"
         }
       ],
       "description": "User ask general question"
     },
     {
+      "intent": "False_Queries",
+      "examples": [
+        {
+          "text": "what is the trouble shooting of ddos"
+        },
+        {
+          "text": "tell me about trouble shooting of ddos"
+        },
+        {
+          "text": "how about the trouble shooting of ddos"
+        },
+        {
+          "text": "how about the trouble shooting of safe link"
+        },
+        {
+          "text": "tell me about the trouble shooting of safe link"
+        },
+        {
+          "text": "what is the trouble shooting of safe link"
+        },
+        {
+          "text": "what is the trouble shooting of infomind"
+        },
+        {
+          "text": "tell me about the trouble shooting of infomind"
+        },
+        {
+          "text": "how about the trouble shooting of infomind"
+        },
+        {
+          "text": "what is the market segment of infomind"
+        },
+        {
+          "text": "tell me about market segment of infomind"
+        },
+        {
+          "text": "how about market segment of infomind"
+        },
+        {
+          "text": "what is the market segment of ddos"
+        },
+        {
+          "text": "tell me about market segment of ddos"
+        },
+        {
+          "text": "how about market segment of ddos"
+        },
+        {
+          "text": "what is the business advantages of infomind"
+        },
+        {
+          "text": "how about business advantages of infomind"
+        },
+        {
+          "text": "tell me about the business advantages of infomind"
+        },
+        {
+          "text": "how about business advantages of ddos"
+        },
+        {
+          "text": "tell me about business advantages of ddos"
+        },
+        {
+          "text": "what is the business advantages of ddos"
+        },
+        {
+          "text": "how about business advantages of safe link"
+        },
+        {
+          "text": "tell me about the business advantages of safe link"
+        },
+        {
+          "text": "what is the business advantages of safe link"
+        },
+        {
+          "text": "what is the value proposition of security pak"
+        },
+        {
+          "text": "tell me about the value proposition of security pak"
+        },
+        {
+          "text": "how about the value proposition of security pak"
+        },
+        {
+          "text": "what is the features of security pak"
+        },
+        {
+          "text": "tell me about the features of security pak"
+        },
+        {
+          "text": "how about the features of security pak"
+        }
+      ],
+      "description": "User ask about False Queries in the products "
+    },
+    {
       "intent": "product_questions",
       "examples": [
         {
-          "text": "tell me the features of security pak"
+          "text": "tell me about overviews"
         },
         {
-          "text": "what it the features of safe link"
+          "text": "how about market segment"
         },
         {
-          "text": "what is the packages of informind"
+          "text": "how about business advantages"
         },
         {
-          "text": "market target of security pak"
+          "text": "how about customer segment"
         },
         {
-          "text": "what is the market segment if security pak"
+          "text": "tell me about business advantages"
         },
         {
-          "text": "what is the segment target of safe link"
+          "text": "tell me about customer segment"
         },
         {
-          "text": "what is the pricing of security pak"
+          "text": "tell me about description"
         },
         {
-          "text": "what it the features of ddos"
+          "text": "tell me about features"
         },
         {
-          "text": "tell me about description of ddos"
+          "text": "tell me about market segment"
         },
         {
-          "text": "tell me about overview of ddos"
+          "text": "tell me about trouble shooting"
+        },
+        {
+          "text": "tell me about value proposition"
+        },
+        {
+          "text": "tell me about market target"
+        },
+        {
+          "text": "tell me about packages"
+        },
+        {
+          "text": "tell me about pricing"
+        },
+        {
+          "text": "how about pricing"
+        },
+        {
+          "text": "how about packages"
+        },
+        {
+          "text": "how about segment target"
+        },
+        {
+          "text": "tell me about segment target"
+        },
+        {
+          "text": "how about overviews"
+        },
+        {
+          "text": "what is the overviews"
+        },
+        {
+          "text": "what is the business advantages"
+        },
+        {
+          "text": "what is the customer segment"
+        },
+        {
+          "text": "what is the description"
+        },
+        {
+          "text": "what is the features"
+        },
+        {
+          "text": "what is the value proposition"
+        },
+        {
+          "text": "what is the trouble shooting"
+        },
+        {
+          "text": "how about trouble shooting"
+        },
+        {
+          "text": "how about value proposition"
+        },
+        {
+          "text": "what is business benefits"
+        },
+        {
+          "text": "tell me business benefits"
+        },
+        {
+          "text": "how about business benefits"
+        },
+        {
+          "text": "tell me about characteristics"
+        },
+        {
+          "text": "what is characteristics"
+        },
+        {
+          "text": "how about characteristics"
+        },
+        {
+          "text": "what is the packages and prices"
+        },
+        {
+          "text": "how about packages and prices"
+        },
+        {
+          "text": "tell me about packages and prices"
+        },
+        {
+          "text": "what is the fees"
+        },
+        {
+          "text": "tell me about the fees"
+        },
+        {
+          "text": "how about the fees"
+        },
+        {
+          "text": "how about the features"
+        },
+        {
+          "text": "how about the trouble shooting"
+        },
+        {
+          "text": "how about description"
+        },
+        {
+          "text": "how about features"
+        },
+        {
+          "text": "how about the value proposition"
+        },
+        {
+          "text": "how about market target"
+        },
+        {
+          "text": "what is the market segment"
+        },
+        {
+          "text": "what is the packages"
+        },
+        {
+          "text": "what is the pricing"
+        },
+        {
+          "text": "what is the segment target"
         }
       ],
       "description": "User ask about products"
@@ -158,109 +365,7 @@
       "intent": "General_Ending",
       "examples": [
         {
-          "text": "ok fine"
-        },
-        {
-          "text": "Catch you later"
-        },
-        {
-          "text": "Cya later"
-        },
-        {
-          "text": "Ending this session"
-        },
-        {
-          "text": "Have a nice day?"
-        },
-        {
-          "text": "Hey bot go away"
-        },
-        {
-          "text": "I am leaving"
-        },
-        {
           "text": "I have got to go"
-        },
-        {
-          "text": "I want to quit"
-        },
-        {
-          "text": "I'm done"
-        },
-        {
-          "text": "I'm leaving now"
-        },
-        {
-          "text": "Im done"
-        },
-        {
-          "text": "It was nice chatting with you"
-        },
-        {
-          "text": "Shut up"
-        },
-        {
-          "text": "Stop doing this"
-        },
-        {
-          "text": "Stop talking to me"
-        },
-        {
-          "text": "tata"
-        },
-        {
-          "text": "Thank you for your time"
-        },
-        {
-          "text": "That is all"
-        },
-        {
-          "text": "Bye now"
-        },
-        {
-          "text": "End trial"
-        },
-        {
-          "text": "Finished now, good bye"
-        },
-        {
-          "text": "Get lost"
-        },
-        {
-          "text": "Go away"
-        },
-        {
-          "text": "Go off"
-        },
-        {
-          "text": "Going now"
-        },
-        {
-          "text": "Good. bye."
-        },
-        {
-          "text": "Goodbye"
-        },
-        {
-          "text": "goodnight"
-        },
-        {
-          "text": "I am out of here"
-        },
-        {
-          "text": "I d like to stop doing this"
-        },
-        {
-          "text": "Im good thank you"
-        },
-        {
-          "text": "Bye bye"
-        },
-        {
-          "text": "Ok goodbye"
-        },
-        {
-          "text": "See you"
         },
         {
           "text": "See you later"
@@ -276,6 +381,108 @@
         },
         {
           "text": "no"
+        },
+        {
+          "text": "Ok goodbye"
+        },
+        {
+          "text": "ok fine"
+        },
+        {
+          "text": "Im good thank you"
+        },
+        {
+          "text": "I d like to stop doing this"
+        },
+        {
+          "text": "I am out of here"
+        },
+        {
+          "text": "goodnight"
+        },
+        {
+          "text": "Goodbye"
+        },
+        {
+          "text": "Good. bye."
+        },
+        {
+          "text": "Going now"
+        },
+        {
+          "text": "Go off"
+        },
+        {
+          "text": "Go away"
+        },
+        {
+          "text": "Get lost"
+        },
+        {
+          "text": "Finished now, good bye"
+        },
+        {
+          "text": "End trial"
+        },
+        {
+          "text": "Bye now"
+        },
+        {
+          "text": "That is all"
+        },
+        {
+          "text": "Thank you for your time"
+        },
+        {
+          "text": "tata"
+        },
+        {
+          "text": "Stop talking to me"
+        },
+        {
+          "text": "Stop doing this"
+        },
+        {
+          "text": "Shut up"
+        },
+        {
+          "text": "It was nice chatting with you"
+        },
+        {
+          "text": "Im done"
+        },
+        {
+          "text": "I'm leaving now"
+        },
+        {
+          "text": "I'm done"
+        },
+        {
+          "text": "I want to quit"
+        },
+        {
+          "text": "See you"
+        },
+        {
+          "text": "I am leaving"
+        },
+        {
+          "text": "Hey bot go away"
+        },
+        {
+          "text": "Have a nice day?"
+        },
+        {
+          "text": "Ending this session"
+        },
+        {
+          "text": "Cya later"
+        },
+        {
+          "text": "Catch you later"
+        },
+        {
+          "text": "Bye bye"
         }
       ],
       "description": "End the conversation"
@@ -285,6 +492,12 @@
       "examples": [
         {
           "text": "yes"
+        },
+        {
+          "text": "Looking good eve"
+        },
+        {
+          "text": "Ok take me back"
         },
         {
           "text": "ola"
@@ -381,45 +594,39 @@
         },
         {
           "text": "how u doing"
-        },
-        {
-          "text": "Looking good eve"
-        },
-        {
-          "text": "Ok take me back"
         }
       ],
       "description": "User greeting the bot."
     },
     {
-      "intent": "QA",
+      "intent": "FAQs",
       "examples": [
+        {
+          "text": "What is the available speed offered?"
+        },
+        {
+          "text": "What are the bundle for documents?"
+        },
         {
           "text": "What are the available document sizes?"
+        },
+        {
+          "text": "What is the standard offering for this service?"
+        },
+        {
+          "text": "What is the available speed offered ?"
+        },
+        {
+          "text": "What are the bundle components offered ?"
+        },
+        {
+          "text": "What is the standard offering for this service of ddos"
+        },
+        {
+          "text": "What is the standard offering for this service"
         }
       ],
-      "description": ""
-    },
-    {
-      "intent": "bot_joke",
-      "examples": [
-        {
-          "text": "wow you are smart"
-        },
-        {
-          "text": "hahaha that's funny"
-        },
-        {
-          "text": "tell me a joke please"
-        },
-        {
-          "text": "can you tell a joke"
-        },
-        {
-          "text": "nice"
-        }
-      ],
-      "description": "User ask about a joke "
+      "description": "User ask about products FAQs"
     }
   ],
   "entities": [
@@ -453,13 +660,35 @@
       "values": [
         {
           "type": "synonyms",
+          "value": "Safe Link",
+          "synonyms": [
+            "SafeLinkService",
+            "Safe Link Service",
+            "SafeLink",
+            "safe",
+            "link",
+            "sadelink",
+            "sasflink"
+          ]
+        },
+        {
+          "type": "synonyms",
           "value": "ddos",
           "synonyms": [
             "distributed denial of service",
-            "Manage ddos ",
-            "manage ddos service ",
+            "Manage ddos",
+            "manage ddos service",
             "manageddos",
-            "Manage DDOS"
+            "ddos services"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Security Pak",
+          "synonyms": [
+            "SecurityPak",
+            "SecurityPakService",
+            "security"
           ]
         },
         {
@@ -468,38 +697,12 @@
           "synonyms": [
             "infomind",
             "Info Mind",
-            "Info Mind Service"
+            "Info Mind Service",
+            "info",
+            "inofmins",
+            "inofmind",
+            "mind"
           ]
-        },
-        {
-          "type": "synonyms",
-          "value": "Safe Link",
-          "synonyms": [
-            "SafeLinkService",
-            "Safe Link Service",
-            "SafeLink"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "STCS Misc",
-          "synonyms": [
-            " STCSMisc",
-            " STCSMiscService "
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "Security Pak",
-          "synonyms": [
-            "SecurityPak",
-            "SecurityPakService "
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "QA",
-          "synonyms": []
         }
       ],
       "fuzzy_match": true
@@ -509,35 +712,9 @@
       "values": [
         {
           "type": "synonyms",
-          "value": "value proposition",
-          "synonyms": [
-            "advantages",
-            "benefits"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "bundle",
-          "synonyms": [
-            "components"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "STCWifi service",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "STC On-Demand features",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
           "value": "features",
           "synonyms": [
-            "Service Features",
-            "features of service",
+            "Features",
             "service characteristics",
             "feature",
             "characteristics",
@@ -546,8 +723,16 @@
         },
         {
           "type": "synonyms",
-          "value": "connect to STCWifi",
-          "synonyms": []
+          "value": "segment target",
+          "synonyms": [
+            "segment client",
+            "target segment",
+            "target client",
+            "market target",
+            "Market Segment",
+            "Customer segment",
+            "segment target of services"
+          ]
         },
         {
           "type": "synonyms",
@@ -559,28 +744,34 @@
             "charge",
             "costly",
             "pricing",
-            "how much "
+            "how much",
+            "fees "
           ]
         },
         {
           "type": "synonyms",
-          "value": "About STC",
-          "synonyms": []
+          "value": "business advantages",
+          "synonyms": [
+            "businessadvantages",
+            "business benefits",
+            "businessbenefits"
+          ]
         },
         {
           "type": "synonyms",
-          "value": "STC Strategy",
-          "synonyms": []
+          "value": "Trouble Shooting",
+          "synonyms": [
+            "trouble-shoot",
+            "troubleshoots"
+          ]
         },
         {
           "type": "synonyms",
-          "value": "Business Advantages",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "STC vision",
-          "synonyms": []
+          "value": "value proposition",
+          "synonyms": [
+            "advantages",
+            "benefits"
+          ]
         },
         {
           "type": "synonyms",
@@ -589,23 +780,8 @@
             "overview",
             "descriptions",
             "details",
-            "describes"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "STC purpose",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "segment target",
-          "synonyms": [
-            "segment client",
-            "target segment",
-            "target client",
-            "market target",
-            "Market Segment"
+            "describes",
+            "overviews"
           ]
         }
       ],
@@ -645,22 +821,43 @@
       "dialog_node": "Welcome"
     },
     {
-      "type": "event_handler",
-      "parent": "node_14_1596613329292",
-      "event_name": "focus",
-      "dialog_node": "handler_1_1596962146730"
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$response.results"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1597241413201",
+      "conditions": "$response",
+      "dialog_node": "response_3_1597241564362"
     },
     {
-      "type": "standard",
-      "title": "Greetings",
-      "metadata": {
-        "_customization": {
-          "mcr": true
-        }
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Could you specify which products are you looking for? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
       },
-      "conditions": "#General_Greetings",
-      "dialog_node": "node_7_1596583443305",
-      "previous_sibling": "Welcome"
+      "parent": "node_2_1597241413201",
+      "conditions": "anything_else",
+      "dialog_node": "response_5_1597241565986",
+      "previous_sibling": "response_3_1597241564362"
     },
     {
       "type": "response_condition",
@@ -680,39 +877,6 @@
       "parent": "node_7_1596583443305",
       "conditions": "@HowRU",
       "dialog_node": "response_4_1596583578375"
-    },
-    {
-      "type": "standard",
-      "title": "Anything else",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "I didn't understand. You can try rephrasing."
-              },
-              {
-                "text": "Can you reword your statement? I'm not understanding."
-              },
-              {
-                "text": "I didn't get your meaning."
-              },
-              {
-                "text": "I didn't get you, can you rephrase your query."
-              },
-              {
-                "text": "Can you provide more details please"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "conditions": "anything_else",
-      "dialog_node": "Anything else",
-      "previous_sibling": "node_2_1596598715326",
-      "disambiguation_opt_out": true
     },
     {
       "type": "response_condition",
@@ -780,7 +944,7 @@
           {
             "values": [
               {
-                "text": "Try again later "
+                "text": "Thank you for using STCS Assistant, if you have any question feel free to type here."
               }
             ],
             "response_type": "text",
@@ -788,23 +952,45 @@
           }
         ]
       },
-      "parent": "node_14_1596613329292",
-      "conditions": "anything_else",
-      "dialog_node": "response_3_1596659687700",
-      "previous_sibling": "response_6_1596659685689"
+      "parent": "node_7_1596583443305",
+      "conditions": "#General_Ending",
+      "dialog_node": "response_9_1597245847123",
+      "previous_sibling": "response_9_1597138494504"
     },
     {
       "type": "standard",
-      "title": "General_Ending",
+      "title": "Greetings_GeneralInformation ",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#General_Greetings || #User_General_Input || #General_Ending",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_7_1596583443305",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Thank you for using STCS Assistant, if you have any question feel free to type here."
+                "text": "I didn't understand. You can try rephrasing."
               },
               {
-                "text": "Thank you for using STCS Assistant, have a good day."
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              },
+              {
+                "text": "I didn't get you, can you rephrase your query."
+              },
+              {
+                "text": "Can you provide more details please"
               }
             ],
             "response_type": "text",
@@ -812,9 +998,50 @@
           }
         ]
       },
-      "conditions": "#General_Ending",
-      "dialog_node": "node_2_1596598715326",
-      "previous_sibling": "node_14_1596613329292"
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_5_1597261729096",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "#False_Queries",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I searched my knowledge base, but did not find anything related to your query."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#False_Queries",
+      "dialog_node": "node_5_1597261729096",
+      "previous_sibling": "node_6_1597238964863"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Could you specify which products are you looking for? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1597238964863",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1597239014891",
+      "previous_sibling": "response_5_1597239013040"
     },
     {
       "type": "response_condition",
@@ -831,23 +1058,22 @@
           }
         ]
       },
-      "parent": "node_14_1596613329292",
+      "parent": "node_6_1597238964863",
       "conditions": "$response",
-      "dialog_node": "response_6_1596659685689",
-      "previous_sibling": "handler_1_1596962146730"
+      "dialog_node": "response_5_1597239013040"
     },
     {
       "type": "standard",
-      "title": "General Query to WD",
+      "title": "WebHooks_WD_Subtitle_Synonyms",
       "actions": [
         {
           "name": "main_webhook",
           "type": "webhook",
           "parameters": {
-            "search_query": "<?input.text?>",
+            "search_query": "@subtitle",
             "search_entity": "@product"
           },
-          "result_variable": "response "
+          "result_variable": "response"
         }
       ],
       "metadata": {
@@ -855,33 +1081,9 @@
           "mcr": true
         }
       },
-      "conditions": "anything_else",
-      "digress_in": "does_not_return",
-      "dialog_node": "node_14_1596613329292",
-      "previous_sibling": "node_8_1596776666980"
-    },
-    {
-      "type": "standard",
-      "title": "General_Information ",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "What do you need help with? I can help you if you ask about STCS products?"
-              },
-              {
-                "text": ""
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "conditions": "#User_General_Input",
-      "dialog_node": "node_1_1596280238096",
-      "previous_sibling": "node_7_1596583443305"
+      "conditions": "anything_else || #product_questions",
+      "dialog_node": "node_6_1597238964863",
+      "previous_sibling": "node_2_1597241413201"
     },
     {
       "type": "response_condition",
@@ -904,19 +1106,48 @@
       "previous_sibling": "response_4_1596583578375"
     },
     {
-      "type": "standard",
-      "title": "IF_Statement",
+      "type": "response_condition",
       "output": {
-        "generic": []
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What do you need help with? I can help you if you ask about STCS products?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
       },
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_14_1596613329292"
+      "parent": "node_7_1596583443305",
+      "conditions": "#User_General_Input",
+      "dialog_node": "response_9_1597138494504",
+      "previous_sibling": "response_5_1596583552814"
+    },
+    {
+      "type": "standard",
+      "title": "WebHooks_WD_Genaric ",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "search_query": "<?input.text?>",
+            "search_entity": "@product"
+          },
+          "result_variable": "response"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
       },
-      "conditions": "#product_questions",
-      "dialog_node": "node_8_1596776666980",
-      "previous_sibling": "node_1_1596280238096"
+      "conditions": "anything_else || #FAQs",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1597241413201",
+      "previous_sibling": "node_7_1596583443305"
     }
   ],
   "workspace_id": "5bb3e510-ab4e-47d7-af7a-6c34e7e7c7a0",
